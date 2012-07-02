@@ -1,0 +1,19 @@
+Änderungen & Verbesserungen für Version 2:
+
+Hardware:
+
+- Zusätzliche Kondensatoren an Spannungsregler! (ausgang: >22uF, ~100uF)
+- Padgröße anpassen (siehe Notizen auf Layout)
+- Uart1 (debug) auf Pads führen
+- Leiterbahnabstand zur GND-Plane vergrößern (bottom layer)
+- Befestigungsbohrungen vorsehen
+- VREF: Kondensator gegen GND, VREF Spannung auf intern stellen
+- GND Leitungen auf top-layer breiter
+
+
+Software:
+
+- Negative Temperaturen verarbeiten
+- Auflösung der Sensoren von 12bit auf 9bit ändern -> schnelleres AD-Wandeln -> höhere Abfragerate
+- Debug Menü aufräumen bzw. durch ein Config Menü ersetzen
+- Beim trennen des Akkupacks Speicherung aller Temperaturwerte im EEPROM zu nachträglichen Auswertung der überschrittenen Temperaturen
